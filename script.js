@@ -5,7 +5,10 @@ function ativaletra(elemento){
         setTimeout(()=>{
             elemento.innerHTML += letra;
         }, 75 * i)
-    })
+    });
 }
+
+ativaletra(titulo);
+
 
 const titulo = document.querySelector('.digitando');
