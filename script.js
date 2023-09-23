@@ -8,7 +8,7 @@ function ativaletra(elemento){
     });
 }
 
-ativaletra(titulo);
 
 
 const titulo = document.querySelector('.digitando');
+ativaletra(titulo);
