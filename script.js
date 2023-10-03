@@ -1,4 +1,3 @@
-function escrevendoLetra(){
     function ativaLetra(elemento){
         const arrTexto = elemento.innerHTML.split('');
         elemento.innerHTML  = '';
@@ -11,4 +10,3 @@ function escrevendoLetra(){
 
     const titulo = document.querySelector('.digitando');
     ativaLetra(titulo);
-} 
