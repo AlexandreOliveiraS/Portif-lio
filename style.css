@@ -9,14 +9,14 @@
 }
 
 body {
-    background-color: #74c2a1;
+    background-color: #000000;
     max-width: 1200px;
     margin: 0 auto;
 
 }
 
 header {
-    background-color: #74c2a1;
+    background-color: #000000;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    color: #000000;
+    color: #ff0000;
     font-size: 2.5rem;
 }
 
