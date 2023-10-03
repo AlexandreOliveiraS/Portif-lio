@@ -88,10 +88,6 @@ header .navegacao-primaria li a {
     max-width: 100%;
 }
 
-article div {
-    color: #fff;
-}
-
 .digitando::after{
     content: '|';
     margin-left: 5px;
@@ -121,3 +117,15 @@ article div {
     }
 }
 
+/*SEÇÃO PRINCIPAL SOBRE MIM*/
+
+main {
+    background-color: #111;
+    color: white;
+}
+
+main .sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
