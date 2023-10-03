@@ -47,6 +47,7 @@ header .navegacao-primaria li a {
 /*download CV secao*/
 
 .section-div {
+    animation: inicializar .7s forwards;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
@@ -85,4 +86,15 @@ header .navegacao-primaria li a {
 
 .section-div img {
     max-width: 100%;
+}
+
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
