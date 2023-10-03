@@ -170,6 +170,7 @@ main .sobre {
 }
 
 .sobre img {
+    animation: ladoSecao .5s ease-in-out forwards;
     cursor: pointer;
     grid-row: 2;
     max-width: 100%;
@@ -242,6 +243,17 @@ main .sobre {
     from {
         transition: .5s;
         transform: translate3d(60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ladoSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
     }
 
     to {
