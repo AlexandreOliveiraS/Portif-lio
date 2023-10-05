@@ -1,4 +1,4 @@
-function escrevendoLetra(){   
+function escrevendoLetra(){
     function ativaLetra(elemento){
         const arrTexto = elemento.innerHTML.split('');
         elemento.innerHTML  = '';
@@ -11,10 +11,15 @@ function escrevendoLetra(){
 
     const titulo = document.querySelector('.digitando');
     ativaLetra(titulo);
-}
+} 
+
+function ativacaoMenu(){
+    const ativaMenu = document.querySelector('.fa-bars');
+    const navMenu = document.querySelector('header .navegacao-primaria')
 
 
-const ativaMenu = document.querySelector ('.fa-bars');
     ativaMenu.addEventListener('click', ()=>{
-    ativaMenu.classList.toggle('fa-x')
-})
+        ativaMenu.classList.toggle('fa-x')
+        navMenu.classList.toggle('ativado')
+    })
+}
