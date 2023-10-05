@@ -305,12 +305,87 @@ main .sobre {
     background-color: #151515;
 }
 
-.my_service {
+
+.my_services {
     padding: 60px;
     color: white;
 }
 
-.my_service ul {
+.my_services ul {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
+.my_services ul li {
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 300px;
+    align-content: center;
+    height: 300px;
+    background-color: #222;
+
+}
+
+.my_services ul li i {
+    font-size: 2.7rem;
+    color: #dc3545;
+}
+
+.my_services ul li h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'poppins';
+    font-weight: 500px;   
+}
+
+.my_services ul li p {
+    color: #707070;
+    font-size: 1.1rem;
+
+}
+
+.my_services li::before {
+    content: '';
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_service li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;  
+    border-right: 2px solid red;
+}
+
+.my_service li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
