@@ -272,16 +272,27 @@ main .sobre {
         background-image: url(img/img\ ilustrativa.PNG);
         background-repeat: no-repeat;
         background-size: cover;
-    }
-}
 
-@media(max-width: 992px){
-    .sobre img {
-        grid-column: 1/-1;
-        justify-self: center;
     }
+    header .navegacao-primaria {
+        display: none;
+     
+    }
+    
+    header i {
+       color: #f7f7f7;
+        font-size: 3rem;
+    }
+ }
 
-    .sobre_conteudo {
-        grid-column: 1/-1;
-    }
-}
+ @media(max-width: 992px) {
+     .sobre img {
+         grid-column: 1/-1;
+         justify-self: center;
+     }
+
+     .sobre_conteudo {
+         grid-column: 1/-1;
+     }
+ }
+
