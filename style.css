@@ -518,3 +518,28 @@ main .sobre {
     padding: 20px;
     position: relative;
  }
+
+   .resume_generico .education_content div::before {
+       content: '';
+       border-right: 30px solid transparent;
+       border-bottom: 30px solid #222;
+       position: absolute;
+       top: -20px;
+       left: 30px;
+   }
+
+   .resume_generico .education_content div span {
+       color: #dc3545;
+       font-family: "Poppins";
+       font-weight: bold;
+   }
+
+   .resume_gerenico .education_content div h3 {
+       font-family: 'Poppins';
+       margin: 10px 0;
+   }
+
+   .resume_gerenico .education_content div p {
+       color: #707070;
+       font-size: 1.1rem;
+   }
