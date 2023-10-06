@@ -13,7 +13,6 @@ body {
     background-color: #000000;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 header {
@@ -116,14 +115,12 @@ header .navegacao-primaria li a:hover::after {
 @keyframes pisca {
     from {
         opacity: 1;
-
     }
 
     to {
         opacity: 0;
     }
 }
-
 
 @keyframes inicializar {
     from {
@@ -151,7 +148,6 @@ main .sobre {
     gap: 30px;
     justify-content: center;
     padding: 40px;
-
 }
 
 .sobre_titulo {
@@ -209,6 +205,7 @@ main .sobre {
     color: #707070;
     grid-template-columns: 1fr 1fr;
 }
+
  .sobre_texto {
     display: grid;
     grid-column: 1/-1;
@@ -229,7 +226,6 @@ main .sobre {
     content: '';
     display: block;
     border-radius: 5px;
-
  }
 
 .sobre_texto p {
@@ -299,8 +295,7 @@ main .sobre {
     }
 
     header .navegacao-primaria {
-        display: none;
-     
+        display: none; 
     }
     
     header i {
@@ -309,18 +304,18 @@ main .sobre {
     }
 
     header .navegacao-primaria.ativado {
-        background: linear-gradient(rgba(43,42,42, 0.176), rgba(46,46,46,0.724));
+        background: linear-gradient(rgba(43, 42, 42, 0.176), rgba(46, 46, 46, 0.724));
         position: absolute;
         display: grid;
         top: 80px;
         color: white;
-        z-index: 5;
+        z-index: 1;
         padding: 30px;
         font-size: 1.6rem;
         font-weight: bold;
         border-radius: 0 0 4px 4px;
         right: 20px;
-        animation: sobeSecao .8s ease-in-out;
+        animation: sobeSecao .8s ease-in-out forwards;
     }
  }
 
@@ -370,7 +365,6 @@ main .sobre {
     align-content: center;
     height: 300px;
     background-color: #222;
-
 }
 
 .my_services ul li i {
@@ -388,7 +382,6 @@ main .sobre {
 .my_services ul li p {
     color: #707070;
     font-size: 1.1rem;
-
 }
 
 .my_services li::before {
@@ -428,3 +421,32 @@ main .sobre {
     border-top: 2px solid red;
     border-right: 2px solid red;
 }
+
+/*EXPERIENCIAS*/
+
+.my_resume {
+    color: #ffff;
+}
+
+.resume_generico {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.resume_generico h2 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    background-color: #dc3545;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.resume_generico h2 i {
+    margin-right: 10px;
+}
+
