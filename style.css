@@ -450,3 +450,34 @@ main .sobre {
     margin-right: 10px;
 }
 
+.experience {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.education {
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+ }
+
+ .experience_content ul {
+    color: #ff5f56;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+ }
+
+ .resume_generico .experience_content div {
+    background-color: #222;
+    padding: 40px;
+ }
+
+  .resume_generico .experience_content div::before {
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+  }
