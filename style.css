@@ -450,17 +450,17 @@ main .sobre {
     margin-right: 10px;
 }
 
-.experience {
+.education {
     margin-bottom: 30px;
     grid-column: 1;
     grid-row: 1;
 }
 
-.education {
+.experience {
     margin-bottom: 30px;
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
- }
+}
 
  .experience_content ul {
     color: #ff5f56;
@@ -474,10 +474,47 @@ main .sobre {
  .resume_generico .experience_content div {
     background-color: #222;
     padding: 40px;
+    position: relative;
  }
 
   .resume_generico .experience_content div::before {
     content: '';
     border-right: 30px solid transparent;
     border-bottom: 30px solid #222;
+    position: absolute;
+    top: -20px;
+    left: 30px;
   }
+
+  .resume_generico .experience_content div span {
+    color: #dc3545; 
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+  .resume_gerenico .experience_content div h3 {
+      font-family: 'Poppins';
+      margin: 10px 0;
+  }
+
+  .resume_gerenico .experience_content div p {
+      color: #707070;
+      font-size: 1.1rem;
+  }
+
+
+  .resume_gerenico .experience_content div.ativo {
+      display: block;
+      padding: 40px;
+  }
+
+  .experience_content ul li.ativo {
+      color: #3e3d3d;
+  }
+
+  /* MEUS DIPÇOMAS E CURSOS */
+
+ .resume_generico .education_content div {
+    background-color: #222;
+    padding: 20px;
+    position: relative;
+ }
