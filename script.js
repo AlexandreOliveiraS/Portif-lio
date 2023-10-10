@@ -23,3 +23,5 @@ function ativacaoMenu(){
         navMenu.classList.toggle('ativado')
     })
 }
+
+ativacaoMenu()
