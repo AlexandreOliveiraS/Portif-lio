@@ -30,31 +30,36 @@ function ativacaoMenu(){
 ativacaoMenu()
 
 function sobreMim(){
-    const DivExperiencia = document.querySelectorAll('.experience_content div');
+    const divExperiencia = document.querySelectorAll('.experience_content div');
     const liExperiencia = document.querySelectorAll('.experience_content ul li')
-    const DivEducation = document.querySelectorAll('.education_content div');
+    const divEducation = document.querySelectorAll('.education_content div');
     const liEducation = document.querySelectorAll('.education_content ul li')
+
+    divExperiencia[0].classList.add('ativo')
+    divEducation[0].classList.add('ativo')
+    liExperiencia[0].classList.add('ativo')
+    liEducation[0].classList.add('ativo')
 
 
     function slideShow(index){
-        DivExperiencia.forEach((div)=>{
+        divExperiencia.forEach((div)=>{
             div.classList.remove('ativo');
         });
         liExperiencia.forEach((item)=>{
             item.classList.remove('ativo');
         });
-        DivExperiencia[index].classList.add('ativo');
+        divExperiencia[index].classList.add('ativo');
         liExperiencia[index].classList.add('ativo');
     }
 
    function slideShow2(index){
-        DivEducation.forEach((div)=>{
+        divEducation.forEach((div)=>{
             div.classList.remove('ativo');
         });
         liEducation.forEach((item)=>{
             item.classList.remove('ativo');
         });
-        DivEducation[index].classList.add('ativo');
+        divEducation[index].classList.add('ativo');
         liEducation[index].classList.add('ativo');
     }
     
