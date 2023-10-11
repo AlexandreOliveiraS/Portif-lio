@@ -27,8 +27,6 @@ function ativacaoMenu(){
     })
 }
 
-cosnt = documento
-
 ativacaoMenu()
 
 function sobreMim(){
