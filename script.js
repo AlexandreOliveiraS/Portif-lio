@@ -32,50 +32,45 @@ cosnt = documento
 ativacaoMenu()
 
 function sobreMim(){
-    const experience = document.querySelectorAll('.experience_content div');
-    const botao = document.querySelectorAll('.experience_content ul li');
-    const education = document.querySelectorAll('.education_content div');
-    const botaoEducation = document.querySelectorAll('.education_content ul li');
+    const DivExperiencia = document.querySelectorAll('.experience_content div');
+    const liExperiencia = document.querySelectorAll('.experience_content ul li')
+    const DivEducation = document.querySelectorAll('.education_content div');
+    const liEducation = document.querySelectorAll('.education_content ul li')
 
-
-    experiencia[0].classList.add('ativo')
-    botao[0].classList.add('ativo')
-    education[0].classList.add('ativo')
-    botaoEducation[0].classList.add('ativo')
 
     function slideShow(index){
-        experience.forEach((divisao)=>{
+        divExperiencia.forEach((div)=>{
             divisao.classList.remove('ativo');
         });
-        botao.forEach((item)=>{
-            item.classList.remove('ativo')
+        liExperiencia.forEach((item)=>{
+            botao.classList.remove('ativo');
         });
-        experience[index].classList.add('ativo')
-        botao[index].classList.add('ativo')
+        divExperiencia[index].classList.add('ativo');
+        liExperiencia[index].classList.add('ativo');
     }
 
-    function slideShow2(index){
-        education.forEach((divisao)=>{
+   function slideShow2(index){
+        divEducation.forEach((div)=>{
             divisao.classList.remove('ativo');
         });
-        botaoEducation.forEach((item)=>{
-            item.classList.remove('ativo')
+        liEducation.forEach((item)=>{
+            botao.classList.remove('ativo');
         });
-        education[index].classList.add('ativo')
-        botaoEducation[index].classList.add('ativo')
+        divEducation[index].classList.add('ativo');
+        liEducation[index].classList.add('ativo');
     }
-
-
-    botao.forEach((event,index)=>{
+    
+    liExperiencia.forEach((event,index)=> {
         event.addEventListener('click', ()=>{
             slideShow(index)
         });
     });
 
-    botaoEducation.forEach((div, index)=>{
-        div.addEventListener('click', ()=>{
+     liEducation.forEach((event,index)=> {
+        event.addEventListener('click', ()=>{
             slideShow2(index)
-        })
-    })
+        });
+    });
+
 }
 sobreMim();
