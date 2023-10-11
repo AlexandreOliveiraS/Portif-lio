@@ -38,7 +38,7 @@ function sobreMim(){
 
     function slideShow(index){
         divExperiencia.forEach((div)=>{
-            divisao.classList.remove('ativo');
+            div.classList.remove('ativo');
         });
         liExperiencia.forEach((item)=>{
             botao.classList.remove('ativo');
