@@ -37,24 +37,24 @@ function sobreMim(){
 
 
     function slideShow(index){
-        divExperiencia.forEach((div)=>{
+        DivExperiencia.forEach((div)=>{
             div.classList.remove('ativo');
         });
         liExperiencia.forEach((item)=>{
             item.classList.remove('ativo');
         });
-        divExperiencia[index].classList.add('ativo');
+        DivExperiencia[index].classList.add('ativo');
         liExperiencia[index].classList.add('ativo');
     }
 
    function slideShow2(index){
-        divEducation.forEach((div)=>{
+        DivEducation.forEach((div)=>{
             div.classList.remove('ativo');
         });
         liEducation.forEach((item)=>{
             item.classList.remove('ativo');
         });
-        divEducation[index].classList.add('ativo');
+        DivEducation[index].classList.add('ativo');
         liEducation[index].classList.add('ativo');
     }
     
