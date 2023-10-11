@@ -478,8 +478,14 @@ main .sobre {
 
  .resume_generico .experience_content div {
     background-color: #222;
+    animation: ladoSecao .5s ease-in-out forwards;
+    display: none;
     padding: 40px;
     position: relative;
+ }
+
+ .resume_generico .experience_content div.ativo {
+    display:block;
  }
 
  .resume_generico .experience_content div::before {
