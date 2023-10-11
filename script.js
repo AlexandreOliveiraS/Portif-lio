@@ -41,7 +41,7 @@ function sobreMim(){
             div.classList.remove('ativo');
         });
         liExperiencia.forEach((item)=>{
-            botao.classList.remove('ativo');
+            item.classList.remove('ativo');
         });
         divExperiencia[index].classList.add('ativo');
         liExperiencia[index].classList.add('ativo');
@@ -49,10 +49,10 @@ function sobreMim(){
 
    function slideShow2(index){
         divEducation.forEach((div)=>{
-            divisao.classList.remove('ativo');
+            div.classList.remove('ativo');
         });
         liEducation.forEach((item)=>{
-            botao.classList.remove('ativo');
+            item.classList.remove('ativo');
         });
         divEducation[index].classList.add('ativo');
         liEducation[index].classList.add('ativo');
